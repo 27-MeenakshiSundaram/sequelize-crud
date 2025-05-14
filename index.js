@@ -6,7 +6,7 @@ const userRoutes = require('./routes/userRoutes');
 app.use(express.json());
 app.use('/users', userRoutes);
 
-sequelize.sync({ force: false })  // creates tables if not exist
+sequelize.sync({ force: false })  
   .then(() => {
     console.log('Database synced');
     app.listen(3000, () => console.log('Server is running at http://localhost:3000'));
