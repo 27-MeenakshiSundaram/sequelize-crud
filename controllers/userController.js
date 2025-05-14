@@ -48,7 +48,6 @@ exports.updateUser = async (req, res) => {
   }
 };
 
-// Delete user by ID
 exports.deleteUser = async (req, res) => {
   try {
     const deleted = await User.destroy({
